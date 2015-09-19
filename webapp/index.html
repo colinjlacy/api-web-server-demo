@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="asyncApp">
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>
+
+	</title>
+</head>
+<body ng-controller="asyncCtrl">
+	<h1>Thoughts on Nintendo</h1>
+
+	<div ng-repeat="item in products track by $index">
+		<hr/>
+		<h3>{{item.name}}</h3>
+		<p>Comment Count: {{item.comments_count}}</p>
+	</div>
+
+	<script src="lib/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="app.controller.js"></script>
+</body>
+</html>
